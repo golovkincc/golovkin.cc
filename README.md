@@ -1,38 +1,71 @@
-# ruby-rails-sample
+# golovkin.cc
 
-This is a simple Ruby app using the [Rails](http://rubyonrails.org) framework.
+My personal Ruby app using the [Rails](http://rubyonrails.org) framework.
 
 ## Running Locally
 
-Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) installed.
 
 ```sh
-git clone git@github.com:heroku/ruby-rails-sample.git # or clone your own fork
-cd ruby-rails-sample
-bundle
-bundle exec rake bootstrap
-heroku local
+git clone git@bitbucket.org:kefiriaus/golovkin.cc.git # or clone your own fork
+cd golovkin.cc
+bundle update
+rails s
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Your app should now be running on [localhost:3000](http://localhost:3000/).
 
-## Deploying to Heroku
+## Creating dokku app
 
 ```
-heroku create
-git push heroku master
-heroku run rake db:migrate
-heroku open
+dokku apps:create golovkin.cc
+dokku postgres:create golovkin
+dokku postgres:link golovkin golovkin.cc
 ```
 
-Alternatively, you can deploy your own copy of the app using the web-based flow:
+## Creating dev dokku app
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+```
+dokku apps:create dev.golovkin.cc
+dokku postgres:create dev.golovkin
+dokku postgres:link dev.golovkin dev.golovkin.cc
+```
+
+## Deploying to Dokku
+
+```
+git add remote dokku/master dokku@codesurfun.io:golovkin.cc
+git push dokku/master master
+```
+
+## Deploying to dev Dokku
+
+```
+git add remote dokku/dev dokku@codesurfun.io:dev.golovkin.cc
+git push dokku/dev dev:master
+```
 
 ## Documentation
 
-For more information about using Ruby on Heroku, see these Dev Center articles:
+For more information about using Dokku, see these Dev Center articles:
 
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
-- [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby)
-- [Heroku Ruby Support](https://devcenter.heroku.com/articles/ruby-support)
+- [Getting Started with Dokku](http://dokku.viewdocs.io/dokku/getting-started/installation/)
+
+## ActiveAdmin
+
+- [Getting Started with ActiveAdmin](http://activeadmin.info/docs/documentation.html)
+
+```
+# create db
+rails generate active_admin:install
+rake db:migrate
+
+# User: admin@example.com
+# Password: password
+```
+
+To register your first model, run:
+
+```
+rails generate active_admin:resource [MyModelName]
+```

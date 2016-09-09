@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.1'
+gem 'rails', '~> 5.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -42,3 +42,15 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+# project
+gem 'rails-i18n', '~> 5.0.0'
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'devise'
+gem 'cancan' # or cancancan
+gem 'drape', '~> 1.0.0.beta1'
+gem 'pundit'
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+gem "rmagick"
+gem "carrierwave"

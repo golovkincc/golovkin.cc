@@ -16,3 +16,7 @@
 !/log/.keep
 /tmp
 .env
+.idea/
+
+config/database.yml
+config/secrets.yml
