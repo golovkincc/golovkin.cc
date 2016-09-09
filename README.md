@@ -34,14 +34,14 @@ dokku postgres:link dev.golovkin dev.golovkin.cc
 ## Deploying to Dokku
 
 ```
-git add remote dokku/master dokku@codesurfun.io:golovkin.cc
+git remote add dokku/master dokku@codesurfun.io:golovkin.cc
 git push dokku/master master
 ```
 
 ## Deploying to dev Dokku
 
 ```
-git add remote dokku/dev dokku@codesurfun.io:dev.golovkin.cc
+git remote add dokku/dev dokku@codesurfun.io:dev.golovkin.cc
 git push dokku/dev dev:master
 ```
 
