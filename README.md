@@ -59,6 +59,7 @@ For more information about using Dokku, see these Dev Center articles:
 # create db
 rails generate active_admin:install
 rake db:migrate
+rake db:seed
 
 # User: admin@example.com
 # Password: password
