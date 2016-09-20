@@ -44,6 +44,8 @@ group :development, :test do
 end
 
 # project
+gem 'bootstrap-sass', '~> 3.3.6'
+gem "font-awesome-rails"
 gem 'rails-i18n', '~> 5.0.0'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
