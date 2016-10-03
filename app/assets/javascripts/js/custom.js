@@ -6,12 +6,16 @@
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
+    $(window).load(function() {
 		$('.loader').fadeOut();
 		$('.page-loader').delay(350).fadeOut('slow');
 	});
 
-	$(document).ready(function() {
+    $(document).on('turbolinks:load', function() {
+
+        $('.loader').hide();
+        $('.page-loader').hide();
+        //$('.page-loader').delay(350).fadeOut('slow');
 
 		/* ---------------------------------------------- /*
 		 * Initialization general scripts for all pages

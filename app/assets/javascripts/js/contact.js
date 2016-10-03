@@ -1,6 +1,6 @@
 (function($){
 
-	$(document).ready(function() {
+    $(document).on('turbolinks:load', function() {
 
 		/* ---------------------------------------------- /*
 		 * Contact form ajax

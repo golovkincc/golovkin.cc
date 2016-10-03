@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'about/' => 'about#index'
+
+  get 'contacts/' => 'contacts#index'
+  post 'contacts/' => 'contacts#create'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'welcome#index'

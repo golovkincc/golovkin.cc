@@ -118,6 +118,8 @@ GEM
       activemodel-serializers-xml (>= 1.0)
       activesupport (>= 5.0.0.beta1)
       request_store (~> 1.0)
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.7.0)
     font-awesome-rails (4.6.3.1)
@@ -262,6 +264,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   drape (~> 1.0.0.beta1)
+  email_validator
   font-awesome-rails
   inherited_resources!
   jbuilder (~> 2.0)
