@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require turbolinks
 //= require js/jquery.superslides.min
 //= require js/jquery.mb.YTPlayer.min
 //= require js/jquery.magnific-popup.min
@@ -32,5 +31,6 @@
 // require http://maps.google.com/maps/api/js?sensor=true
 // require js/gmaps
 //= require js/contact
+//= require turbolinks
 //= require js/custom
 // require_tree .
