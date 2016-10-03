@@ -30,7 +30,7 @@
 //= require js/jquery.parallax-1.1.3
 //= require js/smoothscroll
 // require http://maps.google.com/maps/api/js?sensor=true
-//= require js/gmaps
+// require js/gmaps
 //= require js/contact
 //= require js/custom
 // require_tree .
