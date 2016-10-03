@@ -1,5 +1,7 @@
 <!-- HERO -->
-<section id="hero" class="module-hero module-parallax module-full-height bg-light-30" data-background="assets/bg/sunset_1920.jpg">
+<section id="hero"
+         class="module-hero module-parallax module-full-height bg-light-30"
+         data-background="<%= image_path 'bg/sunset_1920.jpg' %>">
 
   <!-- HERO TEXT -->
   <div class="hero-caption">
@@ -33,7 +35,7 @@
         <div class="content-box pull-left m-t-0">
           <h4 class="font-alt m-t-0 m-b-20">О себе</h4>
 
-          <img src="assets/me.jpg" width="100" class="img-rounded fa pull-left d-block" />
+          <%= image_tag 'me', width: '100', class: 'img-rounded fa pull-left d-block' %>
           <p><strong>Привет</strong>! Меня зовут <strong>Сергей</strong> и я <strong>программист</strong>!
             Разработчик с более чем десяти летним стажем, обширным опытом решения задач любой сложности.
             Помогу Вашему проекту стать лучше. <i class="fa fa-thumbs-o-up"></i></p>
@@ -112,7 +114,7 @@
 <!-- /ABOUT -->
 
 <!-- COUNTERS -->
-<section class="module module-parallax bg-light-30" data-background="assets/bg/sunset_1920.jpg">
+<section class="module module-parallax bg-light-30" data-background="<%= image_path 'bg/sunset_1920.jpg' %>">
 
   <div class="container">
 
