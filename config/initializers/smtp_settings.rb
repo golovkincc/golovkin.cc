@@ -1,9 +1,13 @@
+# Enable mailgun mail service
+service = Rails.configuration.email['mailgun']
+
 Rails.application.config.action_mailer.delivery_method = :smtp
 Rails.application.config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'gmail.com',
-    user_name:            Rails.application.secrets[:gmail][:login],
-    password:             Rails.application.secrets[:gmail][:password],
-    authentication:       'plain',
-    enable_starttls_auto: true  }
+    authentication: service['authentication'],
+    address: service['address'],
+    port: service['port'],
+    domain: service['domain'],
+    user_name: service['user_name'],
+    password: service['password'],
+    enable_starttls_auto: service['service'],
+}
