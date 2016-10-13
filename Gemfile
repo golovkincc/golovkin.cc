@@ -57,3 +57,4 @@ gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 gem "rmagick"
 gem "carrierwave"
 gem 'email_validator'
+gem "figaro"

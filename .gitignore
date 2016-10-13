@@ -20,5 +20,8 @@
 html/
 
 config/database.yml
-config/secrets.yml
+# config/secrets.yml
 config/email.yml
+
+# Ignore application configuration
+/config/application.yml
