@@ -89,7 +89,7 @@
           </h5>
           Email: <%= link_to 'me@golovkin.cc', 'mailto:me@golovkin.cc' %><br>
           Skype: <%= link_to 'kefiriaus', 'skype:kefiriaus?chat'%><br>
-          <%= link_to 'iMessage', 'imessage://kefiriaus@gmail.com' %> | <%= link_to 'WhatsApp', 'whatsapp://send?abid=79261613988&text=Привет!' %> | <%= link_to 'Viber', 'viber://add?number=79261613988' %><br />+7 926 161 39 88
+          <% if @imessage.present? %><%= link_to 'iMessage', "#{@imessage}://kefiriaus@gmail.com" %> | <% end %><%= link_to 'WhatsApp', 'whatsapp://send?abid=79261613988&text=Привет!' %> | <%= link_to 'Viber', 'viber://add?number=79261613988' %><br />+7 926 161 39 88
 
         </div>
         <!-- /ALT CONTENT BOX -->

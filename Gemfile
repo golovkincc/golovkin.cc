@@ -58,3 +58,4 @@ gem "rmagick"
 gem "carrierwave"
 gem 'email_validator'
 gem "figaro"
+gem "browser"
