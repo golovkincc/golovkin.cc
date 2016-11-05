@@ -7,7 +7,7 @@ My personal Ruby app using the [Rails](http://rubyonrails.org) framework.
 Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) installed.
 
 ```sh
-git clone git@bitbucket.org:kefiriaus/golovkin.cc.git # or clone your own fork
+git clone git@github.com:golovkincc/golovkin.cc.git # or clone your own fork
 cd golovkin.cc
 bundle update
 rails s
@@ -34,14 +34,14 @@ dokku postgres:link dev.golovkin dev.golovkin.cc
 ## Deploying to Dokku
 
 ```
-git remote add dokku/master dokku@codesurfun.io:golovkin.cc
+git remote add dokku/master dokku@golovkin.cc:golovkin.cc
 git push dokku/master master
 ```
 
 ## Deploying to dev Dokku
 
 ```
-git remote add dokku/dev dokku@codesurfun.io:dev.golovkin.cc
+git remote add dokku/dev dokku@golovkin.cc:dev.golovkin.cc
 git push dokku/dev dev:master
 ```
 
