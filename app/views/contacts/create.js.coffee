@@ -8,7 +8,7 @@ result.removeClass('alert-success').removeClass('alert').html('')
 <% if @contact.valid? %>
 
 form[0].reset()
-result.addClass('alert').addClass('alert-success').html('Спасибо, <%= @contact.name %>!<br />Я получил Ваше сообщение и скоро Вам отвечу!')
+result.addClass('alert').addClass('alert-success').html('<%= t 'contacts.create.body.success_html', name: @contact.name %>')
 
 <% else %>
 

@@ -4,16 +4,16 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Профессиональное проектирование, интеграция, разработка и внедрение Вашего проекта любой сложности, чистый код, постоянное тестирование и своевременная техподдержка выведут Ваш продукт на новый бизнес-уровень.">
+  <meta name="description" content="<%= t 'meta.description' %>" >
   <meta name="author" content="">
 
   <meta property="fb:app_id" content="1797208150563774" />
   <meta property="og:url" content="https://golovkin.cc" />
-  <meta property="og:title" content="Сергей Головкин" />
-  <meta property="og:description" content="Профессиональное проектирование, интеграция, разработка и внедрение Вашего проекта любой сложности, чистый код, постоянное тестирование и своевременная техподдержка выведут Ваш продукт на новый бизнес-уровень." />
+  <meta property="og:title" content="<%= t 'full_name' %>" />
+  <meta property="og:description" content="<%= t 'meta.description' %>" />
   <meta property="og:image" content="<%= image_url 'bg/surfwave_1920.jpg' %>" />
 
-  <title>Сергей Головкин</title>
+  <title><%= t 'full_name' %></title>
 
   <%= favicon_link_tag 'favicon/apple-icon-57x57.png', rel:'apple-touch-icon', sizes: '57x57' %>
   <%= favicon_link_tag 'favicon/apple-icon-60x60.png', rel:'apple-touch-icon', sizes: '60x60' %>
@@ -68,7 +68,7 @@
 
   <!-- PRELOADER -->
   <div class="page-loader">
-    <div class="loader">Загрузка...</div>
+    <div class="loader"><%= t 'loading' %></div>
   </div>
   <!-- /PRELOADER -->
 
@@ -82,9 +82,9 @@
 
         <ul id="nav">
 
-          <li><a href="<%= root_path %>" title="Главная">Главная</a></li>
-          <li><a href="<%= about_path %>" title="О себе">О себе</a></li>
-          <li><a href="<%= contacts_path %>" title="Контакты">Контакты</a></li>
+          <li><a href="<%= root_path %>" title="<%= t 'menu.main' %>"><%= t 'menu.main' %></a></li>
+          <li><a href="<%= about_path %>" title="<%= t 'menu.about' %>"><%= t 'menu.about' %></a></li>
+          <li><a href="<%= contacts_path %>" title="<%= t 'menu.contacts' %>"><%= t 'menu.contacts' %></a></li>
 
         </ul>
 
@@ -98,7 +98,7 @@
         <div class="row">
 
           <div class="col-sm-12 text-center">
-            <p class="copyright font-alt m-b-0">© <%= Time.now.year %> ИП Головкин Сергей Сергеевич, Все права защищены.</p>
+            <p class="copyright font-alt m-b-0">© <%= Time.now.year %> <%= t 'sole_proprietor' %>, <%= t 'copyright' %>.</p>
           </div>
 
         </div>
@@ -139,9 +139,9 @@
         <!-- /ICONS NAVBAR -->
 
         <ul class="extra-navbar nav navbar-nav navbar-right">
-          <li><a href="<%= root_path %>" title="Главная">Главная</a></li>
-          <li><a href="<%= about_path %>" title="О себе">О себе</a></li>
-          <li><a href="<%= contacts_path %>" title="Контакты">Контакты</a></li>
+          <li><a href="<%= root_path %>" title="<%= t 'menu.main' %>"><%= t 'menu.main' %></a></li>
+          <li><a href="<%= about_path %>" title="<%= t 'menu.about' %>"><%= t 'menu.about' %></a></li>
+          <li><a href="<%= contacts_path %>" title="<%= t 'menu.contacts' %>"><%= t 'menu.contacts' %></a></li>
         </ul>
 
       </div>
@@ -174,7 +174,7 @@
 
           <div class="col-sm-12">
 
-            <p class="copyright text-center m-b-0">© <%= Time.now.year %> <a href="#">ИП Головкин Сергей Сергеевич</a>, Все права защищены.</p>
+            <p class="copyright text-center m-b-0">© <%= Time.now.year %> <a href="#"><%= t 'sole_proprietor' %></a>, <%= t 'copyright' %>.</p>
 
           </div>
 

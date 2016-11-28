@@ -7,14 +7,8 @@
   <div class="hero-caption">
     <div class="hero-text">
 
-      <h1 class="mh-line-size-1 font-alt m-b-50"><span class="mh-line-size-1 font-alt fa fadeInDown animated a-d-05">Напишите</span></h1>
-      <h5 class="mh-line-size-4 font-alt m-b-50">
-        <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-08">Я</span>
-        <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-10">отвечу</span>
-        <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-12">вам</span>
-        <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-14">в</span>
-        <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-16">ближайшее</span>
-        <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-18">время</span></h5>
+      <h1 class="mh-line-size-1 font-alt m-b-50"><span class="mh-line-size-1 font-alt fa fadeInDown animated a-d-05"><%= t '.title' %></span></h1>
+      <h5 class="mh-line-size-4 font-alt m-b-50"><%= t '.description_html' %></h5>
 
       <h6 class="mh-line-size-1 font-alt m-t-100">
         <%= link_to '#contacts', class: 'section-scroll' do %>
@@ -36,8 +30,8 @@
 
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
-        <h2 class="module-title font-alt">Оставайтесь на связи</h2>
-        <div class="module-subtitle font-serif">Свяжитесь со мной любым удобным способом, и вместе мы сделаем Ваш проект лучше.</div>
+        <h2 class="module-title font-alt"><%= t '.body.title' %></h2>
+        <div class="module-subtitle font-serif"><%= t '.body.description' %></div>
       </div>
     </div>
 
@@ -49,24 +43,24 @@
 
           <div class="form-group">
             <%= f.label :name, 'Имя', class: 'sr-only' %>
-            <%= f.text_field :name, class: 'form-control', placeholder: 'Имя*', data: {'validation-required-message': 'Введите Имя.'} %>
+            <%= f.text_field :name, class: 'form-control', placeholder: t('.body.form.name')+'*', data: {'validation-required-message': t('.body.form.errors.name')+'.'} %>
             <p class="help-block text-danger"></p>
           </div>
 
           <div class="form-group">
             <%= f.label :email, 'Email', class: 'sr-only' %>
-            <%= f.text_field :email, class: 'form-control', placeholder: 'Email*', data: {'validation-required-message': 'Введите Email.'} %>
+            <%= f.text_field :email, class: 'form-control', placeholder: t('.body.form.email')+'*', data: {'validation-required-message': t('.body.form.errors.email')+'.'} %>
             <p class="help-block text-danger"></p>
           </div>
 
           <div class="form-group">
-            <%= f.text_area :message, class: 'form-control', rows: 7, placeholder: 'Сообщение*', data: {'validation-required-message': 'Введите сообщение.'} %>
+            <%= f.text_area :message, class: 'form-control', rows: 7, placeholder: t('.body.form.message')+'*', data: {'validation-required-message': t('.body.form.errors.message')+'.'} %>
             <p class="help-block text-danger"></p>
           </div>
 
           <div class="text-center">
             <%= f.button type: 'submit', class: 'btn btn-block btn-round btn-d' do %>
-                Отправить
+                <%= t '.body.form.send' %>
             <% end %>
           </div>
 
@@ -84,9 +78,7 @@
           <div class="alt-content-box-icon">
             <i class="ion-paper-airplane"></i>
           </div>
-          <h5 class="alt-content-box-title font-alt">
-            Скажите Привет
-          </h5>
+          <h5 class="alt-content-box-title font-alt"><%= t '.body.say_hello' %></h5>
           Email: <%= link_to 'me@golovkin.cc', 'mailto:me@golovkin.cc' %><br>
           Skype: <%= link_to 'kefiriaus', 'skype:kefiriaus?chat'%><br>
           <% if @imessage.present? %><%= link_to 'iMessage', "#{@imessage}:kefiriaus@gmail.com" %> | <% end %><%= link_to 'WhatsApp', 'whatsapp://send?abid=79261613988&text=Привет!' %> | <%= link_to 'Viber', 'viber://add?number=79261613988' %><br />+7 926 161 39 88

@@ -1,0 +1,26 @@
+ru:
+  contacts:
+    index:
+      title: Напишите
+      description_html: '<span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-08">Я</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-10">отвечу</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-12">вам</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-14">в</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-16">ближайшее</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-18">время</span>'
+      body:
+        title: Оставайтесь на связи
+        description: Свяжитесь со мной любым удобным способом, и вместе мы сделаем Ваш проект лучше.
+        say_hello: Скажите Привет
+        form:
+          name: Имя
+          email: Email
+          message: Сообщение
+          send: Отправить
+          errors:
+            name: Введите Имя
+            email: Введите Email
+            message: Введите сообщение
+    create:
+      body:
+        success_html: "Спасибо, %{name}!<br />Я получил Ваше сообщение и скоро Вам отвечу!"
