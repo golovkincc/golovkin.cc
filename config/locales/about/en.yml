@@ -35,8 +35,9 @@ en:
           both by your or specially developed interaction plan.'
         development:
           title: Development
-          description: 'Быстрая и качественная разработка продукта, с учетом последних тенденций выбраной Вами платформы.
-          Тестирование и контроль на всех этапах разработки.'
+          description: 'Prompt and top-quality development
+          where all latest trends of the chosen platform will be considered.
+          Testing and control take place on all stages of the project.'
         plugins:
           title: "Modules & Plugins"
           description: "Development of individual modules for implementation into your partner's projects
