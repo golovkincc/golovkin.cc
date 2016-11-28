@@ -59,3 +59,4 @@ gem "carrierwave"
 gem 'email_validator'
 gem "figaro"
 gem "browser"
+gem "active_material", github: "vigetlabs/active_material", branch: 'nh-responsive-redesign'

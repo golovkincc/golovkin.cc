@@ -37,6 +37,13 @@ GIT
       activesupport (> 5.x)
       builder (~> 3.1)
 
+GIT
+  remote: git://github.com/vigetlabs/active_material.git
+  revision: 58444d11e254999eaa7169a2937a6abe1fe7ecd0
+  branch: nh-responsive-redesign
+  specs:
+    active_material (1.4.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -258,6 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_material!
   activeadmin!
   activemodel-serializers-xml!
   bootstrap-sass (~> 3.3.6)
@@ -291,4 +299,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
