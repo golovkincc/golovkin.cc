@@ -1,0 +1,14 @@
+en:
+  meta:
+    description: 'Professional project planning, integration, development and implementation of your project
+    of any complexity grade as well as clean code and constant testing will lead your product to a new business level.'
+  menu:
+    main: Home
+    about: About
+    contacts: Contacts
+  loading: Loading...
+  first_name: Sergey
+  last_name: Golovkin
+  full_name: Sergey Golovkin
+  copyright: All rights reserved
+  sole_proprietor: SP Golovkin Sergey Sergeevich

@@ -1,0 +1,28 @@
+en:
+  contacts:
+    index:
+      title: Email me
+      description_html: '<span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-08">I</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-10">will</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-12">get</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-14">back</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-16">to</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-18">you</span>
+      <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-20">soon</span>'
+      body:
+        title: Stay connected
+        description: 'Get in touch with me by the most convenient way for you
+        and together we will make your project better.'
+        say_hello: Say Hello
+        form:
+          name: Name
+          email: Email
+          message: Message
+          send: Send
+          errors:
+            name: Enter Name
+            email: Enter Email
+            message: Enater Message
+    create:
+      body:
+        success_html: "Thank you %{name}!<br />I have received your message and will answer you soon!"

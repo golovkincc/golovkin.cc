@@ -1,0 +1,51 @@
+en:
+  about:
+    index:
+      title: About Me
+      description: Welcome beyond the limits
+      annotate: Let us make Internet a little better together
+      presentation:
+        about:
+          title: About
+          description_html: '<strong>Hi</strong> <i class="fa fa-smile-o"></i>
+          My name is <strong>Sergey</strong> and I am a <strong>software engineer and developer</strong>
+          with experience of more than 10 years and abilities to resolve tasks of any difficulty level.
+          Will help your project become better. <i class="fa fa-thumbs-o-up"></i>'
+        services:
+          title: Services
+          description_html: 'Professional <strong>project planning</strong>, <strong>integration</strong>,
+          <strong>development</strong> and <strong>implementation</strong> of your project
+          of any complexity grade as well as <strong>clean code</strong> and constant <strong>testing</strong>
+          will lead your product to a new business level
+          while timely <strong>technical support</strong> will provide stability and progress assurance.'
+      banner:
+        coffee: Coffee
+        clients: Clients
+        code: Code lines
+        happy: Happy clients
+      services:
+        title: Services
+        planning:
+          title: Project planning
+          description: 'Project planning that suits exclusively your needs is based on a long-term experience.
+          All individual suggestions and preferences will be taken into account.'
+        integration:
+          title: Integration
+          description: 'Integration with any systems of any difficulty grade (SAP, Oracle, MS SQL, etc) is possible
+          both by your or specially developed interaction plan.'
+        development:
+          title: Development
+          description: 'Быстрая и качественная разработка продукта, с учетом последних тенденций выбраной Вами платформы.
+          Тестирование и контроль на всех этапах разработки.'
+        plugins:
+          title: "Modules & Plugins"
+          description: "Development of individual modules for implementation into your partner's projects
+          as well as extracting business logic into separate plugins can be done to simplify the project management."
+        optimization:
+          title: Optimization
+          description: 'Analysis, code refactoring and business logic optimization is led during all of the launch
+          stages to boost every system and mechanism of your product.'
+        support:
+          title: Technical support
+          description: "Project maintenance is performed on each stage of launch as well as timely and professional
+          technical support and advice on your product's operation."
