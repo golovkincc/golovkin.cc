@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
-  get 'about/' => 'about#index'
-
-  get 'contacts/' => 'contacts#index'
-  post 'contacts/' => 'contacts#create'
-
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root 'welcome#index'
+
+  localized do
+    get 'about/' => 'about#index'
+
+    get 'contacts/' => 'contacts#index'
+    post 'contacts/' => 'contacts#create'
+
+    root 'welcome#index'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

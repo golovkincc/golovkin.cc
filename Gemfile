@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 5.0.0'
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_12factor', group: :production
 gem 'puma'
 
+# Locales
+gem 'rails-i18n', '~> 5.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -36,6 +39,8 @@ gem 'puma'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'sqlite3'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -43,20 +48,44 @@ group :development, :test do
   gem 'spring'
 end
 
-# project
+# Project
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
-gem 'rails-i18n', '~> 5.0.0'
+
+# ActiveAdmin
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'devise'
-gem 'cancan' # or cancancan
-gem 'drape', '~> 1.0.0.beta1'
-gem 'pundit'
-gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
-gem "rmagick"
-gem "carrierwave"
-gem 'email_validator'
-gem "figaro"
-gem "browser"
+gem 'devise-i18n'
 gem "active_material", github: "vigetlabs/active_material", branch: 'nh-responsive-redesign'
+
+# Access groups
+# gem 'cancancan'
+
+# Decorator
+# gem 'draper'
+
+# to_xml
+# gem 'activemodel-serializers-xml'
+
+# WYSIWYG for activeadmin
+gem 'ckeditor'
+
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem "mini_magick"
+
+gem 'email_validator'
+
+# ENV
+gem "figaro"
+
+# Browser detection
+gem "browser"
+
+# Meta tags
+gem 'meta-tags'
+
+# I18n
+gem 'route_translator'
+gem 'http_accept_language'
+# gem 'routing-filter'
