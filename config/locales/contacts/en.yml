@@ -1,6 +1,8 @@
 en:
   contacts:
     index:
+      meta:
+        title: Contacts
       title: Email me
       description_html: '<span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-08">I</span>
       <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-10">will</span>

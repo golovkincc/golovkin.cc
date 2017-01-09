@@ -1,6 +1,8 @@
 ru:
   contacts:
     index:
+      meta:
+        title: Контакты
       title: Напишите
       description_html: '<span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-08">Я</span>
       <span class="mh-line-size-4 font-alt fa bounceInUp animated a-d-10">отвечу</span>

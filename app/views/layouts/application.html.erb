@@ -4,7 +4,6 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<%= t 'meta.description' %>" >
   <meta name="author" content="">
 
   <meta property="fb:app_id" content="1797208150563774" />
@@ -13,7 +12,8 @@
   <meta property="og:description" content="<%= t 'meta.description' %>" />
   <meta property="og:image" content="<%= image_url 'bg/surfwave_1920.jpg' %>" />
 
-  <title><%= t 'full_name' %></title>
+  <%= display_meta_tags site: t('full_name') %>
+  <%#= display_meta_tags description: t('meta.description') %>
 
   <%= favicon_link_tag 'favicon/apple-icon-57x57.png', rel:'apple-touch-icon', sizes: '57x57' %>
   <%= favicon_link_tag 'favicon/apple-icon-60x60.png', rel:'apple-touch-icon', sizes: '60x60' %>
