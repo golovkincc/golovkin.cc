@@ -1,5 +1,18 @@
-<h1 class="title">Произошла ошибка!</h1>
+<!-- HERO -->
+<section id="hero"
+         class="module-hero module-parallax module-full-height bg-light-30"
+         data-background="<%= image_path 'bg/500_1920.jpg' %>">
 
-<div class="advices page-width">
-  <%= link_to 'Назад', :back, class: 'btn btn--primary' %>
-</div>
+  <!-- HERO TEXT -->
+  <div class="hero-caption">
+    <div class="hero-text">
+
+      <h1 class="mh-line-size-1 font-alt m-b-50">
+        <span class="fa mh-line-size-1 font-alt a-d-03"><%= t 'error500.title' %></span></h1>
+
+    </div>
+  </div>
+  <!-- /HERO TEXT -->
+
+</section>
+<!-- /HERO -->

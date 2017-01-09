@@ -12,3 +12,7 @@ ru:
   full_name: Сергей Головкин
   copyright: Все права защищены
   sole_proprietor: ИП Головкин Сергей Сергеевич
+  error404:
+    title: Страница не найдена
+  error500:
+    title: Произошла ошибка

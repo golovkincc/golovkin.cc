@@ -126,6 +126,8 @@ GEM
     formtastic (3.1.4)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
+    gaffe (1.2.0)
+      rails (>= 4.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     has_scope (0.7.0)
@@ -268,6 +270,7 @@ DEPENDENCIES
   email_validator
   figaro
   font-awesome-rails
+  gaffe
   http_accept_language
   inherited_resources!
   jbuilder (~> 2.0)

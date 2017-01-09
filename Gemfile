@@ -85,6 +85,9 @@ gem "browser"
 # Meta tags
 gem 'meta-tags'
 
+# Error pages
+gem 'gaffe'
+
 # I18n
 gem 'route_translator'
 gem 'http_accept_language'
