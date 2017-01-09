@@ -92,3 +92,6 @@ gem 'gaffe'
 gem 'route_translator'
 gem 'http_accept_language'
 # gem 'routing-filter'
+
+# I18n language flags
+gem 'flag-icons-rails'

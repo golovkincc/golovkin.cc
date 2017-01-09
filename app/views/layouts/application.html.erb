@@ -80,12 +80,16 @@
     <div class="overlay-menu-inner">
       <nav class="overlay-menu-nav">
 
-        <ul id="nav">
+        <ul id="nav" class="m-b-20">
 
           <li><a href="<%= root_path %>" title="<%= t 'menu.main' %>"><%= t 'menu.main' %></a></li>
           <li><a href="<%= about_path %>" title="<%= t 'menu.about' %>"><%= t 'menu.about' %></a></li>
           <li><a href="<%= contacts_path %>" title="<%= t 'menu.contacts' %>"><%= t 'menu.contacts' %></a></li>
 
+        </ul>
+
+        <ul id="nav" class="social-text-links">
+          <li><%= link_to flag_icon(:us), root_en_path %></li><li><%= link_to flag_icon(:ru), root_ru_path %></li>
         </ul>
 
       </nav>
@@ -174,7 +178,20 @@
 
           <div class="col-sm-12">
 
-            <p class="copyright text-center m-b-0">© <%= Time.now.year %> <a href="#"><%= t 'sole_proprietor' %></a>, <%= t 'copyright' %>.</p>
+            <p class="copyright text-center m-b-40">© <%= Time.now.year %> <a href="#"><%= t 'sole_proprietor' %></a>, <%= t 'copyright' %>.</p>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-12">
+
+            <ul class="social-text-links font-alt text-center m-b-0" style="font-size: 1.5em">
+              <li><%= link_to flag_icon(:us), root_en_path %></li>
+              <li><%= link_to flag_icon(:ru), root_ru_path %></li>
+            </ul>
 
           </div>
 
