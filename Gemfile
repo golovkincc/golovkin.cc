@@ -63,10 +63,10 @@ gem "active_material", github: "vigetlabs/active_material", branch: 'nh-responsi
 # gem 'cancancan'
 
 # Decorator
-gem 'draper'
+#gem 'draper'
 
 # to_xml
-gem 'activemodel-serializers-xml'
+#gem 'activemodel-serializers-xml'
 
 # WYSIWYG for activeadmin
 gem 'ckeditor'
