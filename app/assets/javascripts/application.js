@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery2
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require js/jquery.superslides.min
@@ -32,5 +33,6 @@
 // require js/gmaps
 //= require js/contact
 //= require turbolinks
+//= require turbolinks.compatibility
 //= require js/custom
 // require_tree .

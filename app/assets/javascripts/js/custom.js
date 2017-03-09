@@ -11,7 +11,7 @@
 		$('.page-loader').delay(350).fadeOut('slow');
 	});
 
-    $(document).on('turbolinks:load', function() {
+    $(document).ready(function() {
 
         $('.loader').hide();
         $('.page-loader').hide();

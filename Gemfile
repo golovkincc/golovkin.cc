@@ -49,6 +49,10 @@ group :development, :test do
 end
 
 # Project
+
+# Add compatibility with jquery
+gem 'jquery-turbolinks', '~> 2.1'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 
