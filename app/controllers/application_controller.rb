@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_locale
+    return if request.path =~ /admin/
     if cookies_locale.blank?
       self.cookies_locale = http_language
       redirect unless locale_language?
