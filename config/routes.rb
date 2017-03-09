@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     get 'contacts/' => 'contacts#index'
     post 'contacts/' => 'contacts#create'
 
+    get 'blog/' => 'posts#index', as: :posts
+    get 'blog/:code/' => 'posts#show', as: :post
+
     root 'welcome#index'
   end
   # The priority is based upon order of creation: first created -> highest priority.

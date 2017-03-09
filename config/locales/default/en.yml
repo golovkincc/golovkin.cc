@@ -4,6 +4,7 @@ en:
     of any complexity grade as well as clean code and constant testing will lead your product to a new business level.'
   menu:
     main: Home
+    blog: Blog
     about: About
     contacts: Contacts
   loading: Loading...
