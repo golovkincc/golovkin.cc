@@ -61,7 +61,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'devise'
 gem 'devise-i18n'
-gem "active_material", github: "vigetlabs/active_material", branch: 'nh-responsive-redesign'
+gem "active_material", github: "vigetlabs/active_material" #, branch: 'nh-responsive-redesign'
 
 # Access groups
 # gem 'cancancan'

@@ -1,0 +1,26 @@
+ru:
+  activerecord:
+    models:
+      admin_user:
+        one: Пользователь
+        few: Пользователя
+        many: Пользователей
+        other: Пользователи
+      post:
+        one: Статья
+        few: Статьи
+        many: Статей
+        other: Статьи
+    attributes:
+      post:
+        lang: Язык сайта
+        active: Активность
+        sort: Сортировка
+        published_at: Дата публикации
+        name: Название
+        picture: Картинка
+        words: Текст
+        author: Автор
+        ref: Ссылка на оригинал
+        user_id: Пользователь
+        admin_user_id: Пользователь админки

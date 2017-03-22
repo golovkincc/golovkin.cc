@@ -1,0 +1,26 @@
+en:
+  activerecord:
+    models:
+      admin_user:
+        one: User
+        few: Users
+        many: Users
+        other: Users
+      post:
+        one: Post
+        few: Posts
+        many: Posts
+        other: Posts
+    attributes:
+      post:
+        lang: Site language
+        active: Active
+        sort: Sort
+        published_at: Published at
+        name: Name
+        picture: Picture
+        words: Words
+        author: Author
+        ref: Original href
+        user_id: User
+        admin_user_id: Admin user

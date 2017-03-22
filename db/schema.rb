@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160927182852) do
+ActiveRecord::Schema.define(version: 20170322224336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,24 @@ ActiveRecord::Schema.define(version: 20160927182852) do
     t.text     "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "lang",          default: "ru",           null: false
+    t.boolean  "active",        default: true
+    t.integer  "sort",          default: 100
+    t.datetime "published_at",  default: -> { "now()" }, null: false
+    t.string   "name"
+    t.string   "picture"
+    t.text     "words"
+    t.string   "author"
+    t.string   "ref"
+    t.integer  "user_id"
+    t.integer  "admin_user_id"
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.index ["admin_user_id"], name: "index_posts_on_admin_user_id", using: :btree
+    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
 end
