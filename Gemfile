@@ -89,6 +89,9 @@ gem "browser"
 # Meta tags
 gem 'meta-tags'
 
+# Sitemap
+gem 'sitemap_generator'
+
 # Error pages
 gem 'gaffe'
 

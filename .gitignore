@@ -18,6 +18,9 @@
 .env
 .idea/
 html/
+public/uploads/
+!public/uploads/.keep
+!public/uploads/sitemap/.keep
 
 config/database.yml
 # config/secrets.yml
